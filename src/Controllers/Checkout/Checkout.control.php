@@ -11,8 +11,8 @@ class Checkout extends PublicController
         $viewData = array();
         $PayPalOrder = new \Utilities\Paypal\PayPalOrder(
             "test".(time() - 10000000),
-            "http://localhost:188/NWECommerce/index.php?page=checkout_error",
-            "http://localhost:188/NWECommerce/index.php?page=checkout_accept"
+            "http://localhost:188/MVC-P/index.php?page=checkout_error",
+            "http://localhost:188/MVC-P/index.php?page=checkout_accept"
         );
 
         $UsuarioId = \Utilities\Security::getUserId();
